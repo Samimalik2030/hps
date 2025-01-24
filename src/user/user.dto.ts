@@ -21,6 +21,21 @@ export class SignUpDTO {
   @IsString()
   @IsNotEmpty()
   confirmPassword: string;
+
 }
 
+
+export class SignInDto{
+
+  @ApiProperty({ type: String, required: true })
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+
+  @ApiProperty({ type: String, required: true })
+  @IsString()
+  @IsNotEmpty()
+  password: string;
+}
 

@@ -6,14 +6,20 @@ export class User{
     @Prop({type:String,default:null})
     @ApiProperty({type:String,})
     name:string;
+
+
     @Prop({type:String,default:null})
     @ApiProperty({type:String,})
     email:string;
+
+
     @Prop({type:String,default:null})
     @ApiProperty({type:String,})
-    password:number;
+    password:string;
+
+
     @Prop({type:String,default:null})
     @ApiProperty({type:String,})
-    confirmPassword:number
+    confirmPassword:string
 }
 export const userSchema =  SchemaFactory.createForClass(User)
